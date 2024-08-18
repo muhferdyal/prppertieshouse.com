@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT SHIPING PROPERTIES |byferdydicoding</title>
+    <link rel="stylesheet" href="css.css">
+
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- font poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  
+    
+    <!-- custom -->
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    </script>
+</head>
+<body class="mx-16 font-poppins">
+    <nav class=" p-4 ">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class=" text-lg font-semibold">Furni<span class="text-orange-300">tures</span></a>
+            <div class="hidden md:flex space-x-6 font-semibold">
+                <a href="#" class=" hover:text-slate-500 transition-all ">Home</a>
+                <a href="#" class=" hover:text-slate-500 transition-all ">Page</a>
+                <a href="#" class=" hover:text-slate-500 transition-all ">Shop</a>
+                <a href="#" class=" hover:text-slate-500 transition-all ">Blog</a>
+                <a href="#" class=" hover:text-slate-500 transition-all ">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class=" focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- icon -->
+             <div class=" gap-4 hidden md:flex text-xl">
+
+                 <i class='bx bx-search'></i>
+                 <i class='bx bx-heart' ></i>
+                 <i class='bx bx-cart-alt' ></i>
+             </div>
+
+            
+        </div>
+        <div id="menu" class="md:hidden hidden mt-2 space-y-2 absolute z-40 left-2 bg-white w-[90%] 
+        dark:bg-[#212529]">
+            <a href="#" class="block p-3 rounded-xl  hover:bg-slate-100 dark:hover:bg-slate-600">Home</a>
+            <a href="#" class="block p-3 rounded-xl  hover:bg-slate-100 dark:hover:bg-slate-600">Page</a>
+            <a href="#" class="block p-3 rounded-xl  hover:bg-slate-100 dark:hover:bg-slate-600">Shop</a>
+            <a href="#" class="block p-3 rounded-xl  hover:bg-slate-100 dark:hover:bg-slate-600">Blog</a>
+            <a href="#" class="block p-3 rounded-xl  hover:bg-slate-100 dark:hover:bg-slate-600">Contact</a>
+        </div>
+    </nav>
+
+
+    <div class="grid  h-[80vh] relative">
+        <div class="absolute w-[100%] bg-[#fcd5ce] h-full"></div>
+        <div class="absolute w-[75%] bg-[#bde0fe]  h-full"></div>
+    
+    <div class="grid grid-cols-1 z-20 w-full h-full sm:gap-10  items-center px-28
+    md:grid-cols-2 md:gap-0">
+    
+        <div class="text  order-last text-center md:text-start md:order-first md:px-4">
+            <p class="bg-red-500 text-white inline text-[10px] 
+            md:text-sm ">NEW ARRIVALS</p>
+            <h1 class="text-md font-semibold py-4
+            md:text-2xl lg:text-4xl dark:text-black">Best Designs of Furniture Collections</h1>
+            <p class="text-[10px] text-slate-500 mb-3
+            md:text-sm md:mb-12"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur viverra, justo at vulputate laoreet, neque nisi ullamcorper justo, </p>
+    
+            <div class="border-[1px] border-red-500 rounded-full py-2 px-4  inline md:text-sm text-[8px] font-semibold hover:text-slate-500 hover:border-red-700 transition-all
+            md:text-[8px] dark:text-black">SHOP NOW</div>
+        </div>
+        <div class="images  flex justify-center ">
+            <img src="./image/1.content.png" alt="img" class="w-[250px] md:w-[340px]">
+        </div>
+        
+    </div>
+     </div>
+
+
+     <div class="my-14 grid h-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3  p-10 md:px-16 lg:px-20 gap-10">
+  
+        <div class="border-2 p-2 hover:scale-105 hover:shadow-xl  transition-all rounded-xl">
+    
+            <div class="img  flex justify-center my-4">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAClUlEQVR4nO2YXWvTUBjH643gh/CzCG52RVm9ceCdd9q13gys65ompSztTbolTdaONgPtUiuscyjrqDejXTdR6F6oIC04QRBdKWKLLgxFeOQc2LqXxKW16TLJA38O5+ScP7/nOSccEovFjP897N4l0EOWbgIyuWZXZTcBc2YFz/4Min4blyCtzZi3H7Qo7rP+ECnrOFgsF3oCuMANyfU1EuTNoCZ9WSFgNjgox4hrd3oCWG8Dbl8fXj4AkbJ9PFJFvQBlFYi5ydsatvzq6JkBxrz9UKyBql4sL0E8YG8YFnDl8y+IB27CFHHFZkjAYg0g80yEOHWjYljA5e2vME1ehyhhvWxIwGIN4MkMBTGf7blhAXPrW+hl+WlYwMKnPZj22cCwgMUa4LkmoHysghlWy03SUs8rKLeh8wNo10Fyh1CHAwMy7iRsv/veVTHuZPcAX/f1wb5MwM0OzqBaBStvG/AoXQB3UIRhIoLbZDoP1fK3f9riRikEGSkMHjoCwwSH23mJgWZJBVDpDCI4/0QK6Kk0LOZLsLpRxe24kMbjp0EyKoAIjmY4CAnJI740LwEd5k5AqgKiyiG4N+X3J0QLaXj8tNARYEYKYzgl3yA/C/Op8MHc+isKEqS1oQiItjObL+GFUWkRXCQPUSmL+2j8YWimI0APHfmrryfIH8AtsLfkhH9gEgMel8PLwep6BS90kjzcHWPBRQm4j8bRc6V1zCEpXVsOL3uKL4vnocqJ1AA75x+6qPgx7yKFWivTLDaLplqZunz8Thv/Brrv6yS4UCAi7SmdFYpN7joJjtZkpJfvyMjEJSfJl/2stIsyW9uo4gyRiYvkt9BzTUZ6+qLJDoKn75PCzr0x9jdqUYadwunta8a5jT9NThfVNfqQwQAAAABJRU5ErkJggg==">
+            </div>
+            <div class="text text-center mb-6">
+                <p class="text-lg font-bold py-3">Free Shiping</p>
+                <p class="text-sm ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, vitae.</p>
+            </div>
+        </div>
+     
+    
+    
+      
+        <div class="border-2 p-2 hover:scale-105 hover:shadow-xl  transition-all rounded-xl">
+    
+            <div class="img  flex justify-center my-4">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFgElEQVR4nO2XC0yTVxTHz/kKfdD2Q8EXLUKtY+AG87XBppnL3KxDJ9ky8AGiFnHYCGa+povGGMc2MVnYTCabynQgoijr0GI0FEpboA+gLW0pQgErjmyazSxzy9zDsVxiDSItD6sukX9yku+7t/f2951z7z3nAoxqVE+eEADmAsAaAGA8DoAAAPD30BdF+flVTng6UhP2/AtVyGCcQkQFAMx7mEAzEDHHz9+/Iig4WD1JINAFjx/fyOfzm3h8vpnJZNYh4pcAkMXi8c3SkjOXtzaYezbpjLeDRKLaqS/Pq0bEsocBFklRlOKpyMiaA/n5JuuVK385urt7BrJkqVTFCQxsyqrW3Izf+6E5WCQy+LHZLSHRMaqUwuNOisFw+RpuNU3TppLycqcnKGLG1tbf9uzbZ2QHcB0pxwrauEFBFj8ms33Z4Xz7lnrT7dTCE20sHs8CAOm+hNsSOW2a1pvHHN3dPVqL5WdOQIAjPDZOzeJyWzl8vq1QLm8ZM3asaWneIavoxZdUFEXpACDal3BrRVOm1NmvXv3XG5zJ6fydDgy0Ldy9x0jW26zlK9QL4uOrSd+y1NQqRCReSwEAypdwr/Bp2kr+fCCoxj7t6Rs2qBHRGbdaqiGAb3/2uXladHQN6Tt6+rQNEU+CjxXOZLHslfX1Pw4EV3z2rFMQGqp3v0dERWkBYCZFUeVMDsfOYDCunzp/vs3dz2SxTL6EC2AwGLXH5fJLnkJK03TzWZWqw/2+cft2DSKWA0AGAHwQNG5cQ9/fi8TiWvLRvoBjEi/s3b//rnfuC217+y02m92ua26+sXXXLt1xudxO2k8qFC2Zmzer9+Tk6Mlu7jtm+apVKgBIfFA4ChGLpevXq71tCEd3d89HubnGAC6X7FCzpaNjwDXa1w4cOdKIiB8/CBwDEY+sycjwCPdJbq7R1tV1dzenyWTaZ6KjNeS5Qq+/Jtu0yePY0osXnWT+kcL5I2LRYJ5blJCgDBEK602dnX+622LnzFFHREXVcLlcxzdnzlg9Al640IaIX43Uc6Wp6eke4Q4ePdqUIpXWmTo7b6VnZqrCxWKD25NkbeUVFJi0Fst1bx+3Mzu7DgDeHzYdSfrvJCf3HqiejMPhOJauXFktDAszWF2uvxcsWqR8TSLpDe2rEoly1bp1vc/eTCQWE8Dnhsv37CSBwDDQhCRz2Lq6bpNnct6RMy0oONgsjojQkZQnmjq1RiAUGkIEgvoaq/WGN7iTCkUrRVHKEXnv07y8xv4T1tntN2iatpGKhbwXlJY2UxT1U+KKFVVpMpkqLDycHCM3y6qqXIN5ztzR8Qefpkmamz4SwNO1Ntsv/SeVLF5c/d6OHdq+baTEOlxU1HveZWzcqC6rrLw8GByJABkHAO8OG+4OYN7XJSUt/ScmoTuv1XZ9p1RenjBxoilm5kxt8blzl0g47YMUDX1tVmwsKUxz4AEUP3327Hs8ReyNJUtUYSKRjoRZrlR2rpXJ1PMXLqxOTUtTecrN/W2+RKJCxIN37iMjFlIUpTlRVtbeLzT/FJWVORqczt50pdBouqaIxbVD9dxbSUkViJjvq9IqhsfjWY2trfelK7I7d2Zn6/k0bT9UXNw0FLiEpCSVL+HcWi6YPNnQ5HLdUzEfPHbMvCQxsarCYPh+KHBJyclkzRX6Gs6tDYLQUJ3F5bo11FA6+hjJ4Yh46mHfezMEQqGRpLThwGVu26ZFxG+93I19qjWk2DQ4HL8OBW5dVlYdRVHnSB0Jj1Bv0jRtrjQar3mDi09IIBuCwLHhMSiOyWRatu3eret/OFfo9T9MFol0iPjFowqrJ41BxP1sDqc5ZsYMbdzcueoJISENFEWRC9Bi+B+JeCkOAF4HgIjHDTOqUT3x+g8HRiw2Aop0LAAAAABJRU5ErkJggg==">
+            </div>
+            <div class="text text-center mb-6">
+                <p class="text-lg font-bold py-3">Amazing Sale</p>
+                <p class="text-sm ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, vitae.</p>
+            </div>
+        </div>
+    
+    
+    
+      
+        <div class="border-2 p-2 hover:scale-105 hover:shadow-xl  transition-all rounded-xl">
+    
+            <div class="img  flex justify-center my-4">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAnCAYAAACMo1E1AAAACXBIWXMAAAsTAAALEwEAmpwYAAAE0klEQVR4nO3YbWxTVRgH8DOZI4oIAYwva8jajYIM2BisfEHLWqbTtlsGtHcgEFFRiKALQiZKQjKUMV065W3AREF0Zczhhq5lzGlCWJSw7U4Yu7ftnTHGMUIkk7Z7Z/2bHrBdu7q2SosfOMk/ac9zm/PrOc+9TUrIvXFveAa0oknQSdaAkRwGI64BI6mj0cWvJndrYDu5D4xkCxixDYwEI6KTXIFWMiHyMLk8Goy4zC/KG9gLnfgktAkzI4djxDsCwhivdCNHnB4JmBSM5GaIOIARX3P1Z5hxkn2jIl5IAPLmAiVPAzsX+AI3hRvXMSroGxVg0nhSMAy4PL4+fDDttNigQCaNf+ByyW/hw+niU+gi+bLAIJNPNie7gI7w4bRxcorb81RoMJMGeDeF7l74cCvi0/6/uKMJ3+KtGV444dAiDPg54j8rMtDxudIzty0FyJ/uRJk0987DDs67HwbpEE4uACoz6IL2ygxszXgcl3YvHIGr2pKE4hUSz1zlc8CJ2UCZ9Owdx1GgQboblTLncMQfx9PhNKlH4Pqrn8eNiltfwp3yWb04Pi0nLDgKNGZmh9xvJg1g1DhxSj0lbDCKO/3MJBg1g6ED1RfCCnMDTWpDyLga1doI4bLiYNRcD2HXfsIP8uiI4CjQqJbDpLIF7jV1K85kPhExmBtoiM+ijxa/MBVQPrsPVZnjIw6juEMkGQcI8Mk44Is44PgMwCAFjsUCpTFACeka7fOd6XPGdcmTJoYXd+Af4gcHrXaMXZn6hl0hM9sXy+BYmgybMvV3u0K2w4X9z6jzbW2TmznhzZY2rq69odR+1bgOtvKFGDw8Ef1HROiqzMCVM5vBN1Z1spzV0GQWciwWy1hoZ8bYlDKjXSmDKz2vPon+D0T0tSs2ZWrLDWXq5H+Famxvn8DyQhHLWXtZXsDwNHMC3ilswL6jjV7z7jpvvXpt3Yu1f0NcGdj/GIbqHnS/p1GkVoUMazGbF7C80OFvYZYXULj/POTZNUhbYsRXpksj6i0trbAtk6F7TaI7zoYYoI2gZ+N0zzyTBHv6/FlBw1izkO1vt9hhOceaoVhag1Ub69HEWUfUzVVfw/5sKgZKHgUuE4ryzc3qh2kP2hWyDcHtmMUyNxCM5QX82GKhO7fy9Xq/dauhzH10vbnT4GyM9sAuk1u9t9jde9sCwgBENfNCUyAYywswnW2jONXK037rXG2tV28NnR3rhXMsSx7Wd/NXBsQ1cdbMYGAsL8Bw6meKW7SkBhdaRx4ry1nQpVPRxbtXz6KowS8nob8oFmiNQt+OqbdhMkdQd2wzJ5QHiys51kRxrnzXwPm9Rij7jB5df6HIg3E9Ul5KxMCnU+hrR5psc1D9xvLWK8HiCvbdultdqTBe9HtNhykPA5segUMz1/vx4UKp5qHvNZETHxJxQBjHceODhbG8gLz3z7lxpYZmP9dY0XcwDigmcO6MQf/6WNx4OQ2OFbOH+tZOxVD+A7QGPXkvqF8BlrPWBZutBQ2/rNpQf92VvUcaL/rWf/2+uJkuPixXq9ebe0qlnT7zndhOYkgkB4rIDHxE5mAveQjFJP/2LmVBTw5BT5woJrnQEwX05BV8TEQRxRFfrJ7sgp4kQk/eRjHZclcxvgMgUThBxmAXCfjv518ZtkGj6wsY/gAAAABJRU5ErkJggg==">
+            </div>
+            <div class="text text-center mb-6">
+                <p class="text-lg font-bold py-3">Expert Customer</p>
+                <p class="text-sm ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, vitae.</p>
+            </div>
+        </div>
+     
+    
+    
+    
+    
+      </div>
+
+
+
+
+
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-6 mb-12">
+        <div class="card rounded-lg p-4 bg-[#fcd5ce] flex overflow-hidden items-center md:col-start-1 md:col-end-3 xl:col-start-1 xl:col-end-3 xl:items-start">
+            <div class="img relative -left-2 top-1 xl:-left-20 xl:top-20 xl:w-[1200px]">
+                <img src="./image/1/col-card-1.png" alt="img" >
+            </div>
+            <div class="text  w-1/2 xl:w-full xl:mt-6">
+                <p class="text-[10px] text-red-500 lg:text-[12px] xl:text-sm">NEW ARRIVAL</p>
+                <p class="font-semibold lg:text-lg xl:text-xl dark:text-black ">Restrostar Foostool</p>
+                <p class="flex text-sm items-center dark:text-black">Shop Now <i class='bx bx-chevron-right'></i></p>
+            </div>
+        </div>
+    
+        
+        <div class="card rounded-lg p-4 bg-[#ade8f4] flex justify-evenly xl:justify-normal  md:col-start-3 md:col-end-5 lg:col-start-3 lg:col-end-4 lg:grid lg:gap-2 xl:flex ">
+            <div class="relative w-[120px] xl:top-24 xl:w-[240px]">
+                <img src="./image/1/col-card-2.png" alt="img">
+            </div>
+            <div class="text xl:w-full">
+                <p class="text-[10px] text-red-500 lg:text-[12px] xl:text-sm">FEATURED</p>
+                <p class="font-semibold lg:text-lg xl:text-xl dark:text-black">Syena Tray</p>
+                <p class="flex text-sm items-center dark:text-black">Shop Now <i class='bx bx-chevron-right'></i></p>
+            </div>
+        </div>
+    
+        <div class="card rounded-lg p-4 bg-[#d8f3dc] flex justify-evenly md:grid lg:grid lg:col-start-4 lg:col-end-6 xl:col-start-4 xl:col-end-5">
+            <div class="img w-[150px] md:w-[120px] lg:w-[200px] ">
+                <img src="./image/1/col-card-3.png" alt="img">
+            </div>
+            <div class="text">
+                <p class="text-[10px] text-red-500 lg:text-[12px] xl:text-sm">TRENDING NOW</p>
+                <p class="font-semibold lg:text-lg xl:text-xl dark:text-black">Atalaia Pouf</p>
+                <p class="flex text-sm items-center dark:text-black">Shop Now <i class='bx bx-chevron-right'></i></p>
+            </div>
+        </div>
+    
+        <div class="card rounded-lg p-4 bg-[#a4c3b2] flex justify-evenly sm:gap-4 md:col-start-2 md:col-end-4 md:items-center lg:col-start-1 lg:col-end-3 xl:col-start-1 xl:col-end-3">
+            <div class="img w-[120px] lg:w-[240px]">
+                <img src="./image/1/col-card-4.png" alt="img">
+            </div>
+            <div class="text w-1/2">
+                <p class="text-[10px] text-red-500 lg:text-[12px] xl:text-sm">POPULAR</p>
+                <p class="font-semibold lg:text-lg xl:text-xl dark:text-black">Areli Pendant</p>
+                <p class="flex text-sm items-center dark:text-black">Shop Now <i class='bx bx-chevron-right'></i></p>
+            </div>
+        </div>
+    
+        <div class="card rounded-lg p-4 bg-[#f3d5b5] flex overflow-hidden gap-4 sm:grid lg:flex lg:col-start-3 lg:col-end-6 xl:col-start-3 xl:col-end-5">
+            <div class="img relative w-[250px] sm:left-20 md:left-0 md:w-[130px] lg:w-[290px] lg:top-14 xl:w-[480px] xl:top-4">
+                <img src="./image/1/col-card-5.png" alt="img">
+            </div>
+            <div class="text ">
+                <p class="text-[10px] text-red-500 lg:text-[12px] xl:text-sm">HOT COLLECTION</p>
+                <p class="font-semibold lg:text-lg xl:text-xl dark:text-black">Gaston Wall Desk</p>
+                <p class="flex text-sm items-center dark:text-black">Shop Now <i class='bx bx-chevron-right'></i></p>
+            </div>
+        </div>
+      </div>
+
+
+      <h1 class="mt-20 text-2xl text-center">Featured Products</h1>
+<p class="text-center text-slate-500  mb-12 text-sm mx-0 md:mx-10 lg:mx-36 dark:text-slate-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, explicabo.</p>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  justify-items-center  my-10 gap-6">
+    <div class="card  grid mt-6 justify-center items-center w-[300px]">
+        <div class="img w-[250px] h-[300px]  p-7 bg-slate-200 items-center justify-center grid rounded-xl  md:w-[230px]  xl:w-[250px]">
+            <img src="./image/2/card-fet-1.png" alt="img" class="w-[200px]">
+        </div>
+        <div class="text grid justify-center items-center mt-5">
+            <p>Small Plate Set</p>
+            <div class="flex gap-6">
+                <p class="text-slate-400">$12.00</p>
+                <p class="font-semibold text-red-400 dark:text-white">$10.00</p>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="card  grid mt-6 justify-center items-center w-[300px]">
+        <div class="img w-[250px] h-[300px]  p-7 bg-slate-200 items-center justify-center grid rounded-xl  md:w-[230px]  xl:w-[250px]">
+            <img src="./image/2/card-fet-2.png" alt="img" class="w-[150px]">
+        </div>
+        <div class="text grid justify-center items-center mt-5">
+            <p>Some Nevada</p>
+                <p class="font-semibold text-black text-center dark:text-white">$45.00</p>
+            
+        </div>
+    </div>
+
+    <div class="card  grid mt-6 justify-center items-center w-[300px]">
+        <div class="img w-[250px] h-[300px]  p-7 bg-slate-200 items-center justify-center grid rounded-xl  md:w-[230px]  xl:w-[250px]">
+            <img src="./image/2/card-fet-3.png" alt="img" class="w-[200px] ">
+        </div>
+        <div class="text grid justify-center items-center mt-5">
+            <p>Small From Bardbool</p>
+            <p class="font-semibold text-black text-center dark:text-white">$24.00</p>
+        </div>
+    </div>
+
+    <div class="card  grid mt-6 justify-center items-center w-[300px]">
+        <div class="img w-[250px] h-[300px]  p-7 bg-slate-200 items-center justify-center grid rounded-xl  md:w-[230px]  xl:w-[250px]">
+            <img src="./image/2/card-fet-4.png" alt="img" class="w-[150px]">
+        </div>
+        <div class="text grid justify-center items-center mt-5">
+            <p>Side Table</p>
+            <p class="font-semibold text-black text-center dark:text-white">$14.00</p>
+        </div>
+    </div>
+
+    <div class="card  grid mt-6 justify-center items-center w-[300px]">
+        <div class="img w-[250px] h-[300px]  p-7 bg-slate-200 items-center justify-center grid rounded-xl  md:w-[230px]  xl:w-[250px]">
+            <img src="./image/2/card-fet-5.png" alt="img" class="w-[180px]">
+        </div>
+        <div class="text grid justify-center items-center mt-5">
+            <p>Option Chair</p>
+            <p class="font-semibold text-black text-center dark:text-white">$30.00</p>
+        </div>
+    </div>
+
+    <div class="card  grid mt-6 justify-center items-center w-[300px]">
+        <div class="img w-[250px] h-[300px]  p-7 bg-slate-200 items-center justify-center grid rounded-xl  md:w-[230px]  xl:w-[250px]">
+            <img src="./image/2/card-fet-6.png" alt="img" class="w-[200px]">
+        </div>
+        <div class="text grid justify-center items-center mt-5">
+            <p>Booking Disk</p>
+            <p class="font-semibold text-black text-center dark:text-white">$12.00</p>
+        </div>
+    </div>
+
+    <div class="card  grid mt-6 justify-center items-center w-[300px]">
+        <div class="img w-[250px] h-[300px]  p-7 bg-slate-200 items-center justify-center grid rounded-xl  md:w-[230px]  xl:w-[250px]">
+            <img src="./image/2/card-fet-7.png" alt="img" class="w-[200px]">
+        </div>
+        <div class="text grid justify-center items-center mt-5">
+            <p>Ferdera Cashion</p>
+            <p class="font-semibold text-black text-center dark:text-white">$33.00</p>
+        </div>
+    </div>
+
+    <div class="card  grid mt-6 justify-center items-center w-[300px]">
+        <div class="img w-[250px] h-[300px]  p-7 bg-slate-200 items-center justify-center grid rounded-xl  md:w-[230px]  xl:w-[250px]">
+            <img src="./image/2/card-fet-8.png" alt="img" class="w-[170px]">
+        </div>
+        <div class="text grid justify-center items-center mt-5">
+            <p>Small Plate Set</p>
+            <div class="flex gap-6">
+                <p class="text-slate-400">$15.00</p>
+                <p class="font-semibold text-red-400">$23.00</p>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="my-14 grid relative">
+    <div class="absolute w-[100%] bg-[#bde0fe]  h-full"></div>
+    <div class="absolute w-[50%] bg-[#fcd5ce] h-full"></div>
+     <div class="grid grid-cols-1 relative justify-items-center p-7 gap-10 lg:grid-cols-3">
+        <div class="img w-[170px] md:w-[260px]  xl:w-[300px]">
+
+            <img src="./image/3/week-1-removebg-preview.png" alt="img">
+        </div>
+      
+
+
+        <div class="text bg-white rounded-full z-20 w-[250px] h-[250px]   md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] relative lg:mt-7">
+            <div class=" text-center  mt-10 md:mt-14 px-10">
+                <p class=" dark:text-black inline-block bg-red-500 text-white text-sm md:text-base">Full Time Collection</p>
+                <p class=" dark:text-black text-lg font-semibold my-3 md:text-xl lg:text-2xl">Deal Of The Week</p>
+                <div class="flex gap-2 justify-center  md:gap-6 md:px-3">
+                    <div class="grid  mb-8">
+                        <p class=" dark:text-black text-md font-semibold md:text-xl ">22</p>
+                        <p class=" dark:text-black text-[10px] md:text-sm"> Days</p>
+                    </div>
+                    
+                    <div class="grid  mb-8">
+                        <p class=" dark:text-black text-md font-semibold md:text-xl">10</p>
+                        <p class=" dark:text-black text-[10px] md:text-sm">Hours</p>
+                    </div>
+                    <div class="grid  mb-8">
+                        <p class=" dark:text-black text-md font-semibold md:text-xl">56 </p>
+                        <p class=" dark:text-black text-[10px] md:text-sm">Minutes</p>
+                    </div>
+                    <div class="grid  mb-8">
+                        <p class=" dark:text-black text-md font-semibold md:text-xl">33</p>
+                        <p class=" dark:text-black text-[10px] md:text-sm"> Seconds</p>
+                    </div>
+                </div>
+                <div class="btn py-2 px-4 rounded-full border-[1px] border-red-600 inline text-[10px] md:text-base dark:text-black">Shop Now</div>
+            </div>
+        </div>
+
+
+        <div class="img w-[280px] md:w-[360px]  relative">
+
+            <img src="./image/3/week-2-removebg-preview-2.png" alt="img">
+        </div>
+     </div>
+</div>
+<!-- card threee -->
+ <p class="text-2xl text-center font-semibold">Latest New</p>
+ <p class="text-center text-slate-500 mb-20 dark:text-slate-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste laborum obcaecati corrupti omnis labore </p>
+
+<div class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-8  mb-16 mx-10 sm:mx-14 lg:mx-20">
+    <div class="card relative">
+       <img src="./image/4/cr-1.png" alt="img" class="rounded-xl w-[320px] sm:w-[360px] ">
+       <div class="text absolute bottom-0 bg-white m-3 p-2 rounded-xl">
+        <div class="flex items-center gap-2 px-3 lg:px-0">
+            <i class='bx bx-calendar-alt text-red-400'></i>
+            <p class="text-sm dark:text-black">January 14 2022.</p>
+            <i class='bx bx-user text-red-400' ></i>
+            <p class="text-sm dark:text-black ">John Adm</p>
+        </div>
+        <h2 class="text-lg font-semibold mt-2 dark:text-black">Modern & Cotemporary Adult Bedroom</h2>
+       </div>
+    </div>
+
+
+    
+    <div class="card relative">
+       <img src="./image/4/cr-2.png" alt="img" class="rounded-xl w-[320px] sm:w-[360px] ">
+       <div class="text absolute bottom-0 bg-white m-3 p-2 rounded-xl">
+        <div class="flex items-center gap-2 px-3 lg:px-0">
+            <i class='bx bx-calendar-alt text-red-400'></i>
+            <p class="text-sm dark:text-black">July 07 2020.</p>
+            <i class='bx bx-user text-red-400' ></i>
+            <p class="text-sm dark:text-black ">Laura Monz</p>
+        </div>
+        <h2 class="text-lg font-semibold mt-2 dark:text-black">Bedroom America Modern & Aestethic</h2>
+       </div>
+    </div>
+
+
+    <div class="card relative">
+       <img src="./image/4/cr-3.png" alt="img" class="rounded-xl w-[320px] sm:w-[360px] ">
+       <div class="text absolute bottom-0 bg-white m-3 p-2 rounded-xl">
+        <div class="flex items-center gap-2 px-3 lg:px-0">
+            <i class='bx bx-calendar-alt text-red-400'></i>
+            <p class="text-sm dark:text-black">Octber 22 2018.</p>
+            <i class='bx bx-user text-red-400' ></i>
+            <p class="text-sm dark:text-black ">Mich Well</p>
+        </div>
+        <h2 class="text-lg font-semibold mt-2 dark:text-black">Study Room Modern Classic & Comfortable</h2>
+       </div>
+    </div>
+
+
+
+</div>
+
+<!-- ggaleery  simple-->
+<p class="text-center font-semibold text-2xl">Follow Social Media </p>
+<p class="text-center text-red-500 text-base">Pictures Gallery</p>
+<div class="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-3ss">
+    <img src="./image/5/1.jpg" alt="img">
+    <img src="./image/5/2.jpg" alt="img">
+    <img src="./image/5/3.jpg" alt="img">
+    <img src="./image/5/4.jpg" alt="img">
+    <img src="./image/5/5.jpg" alt="img" >
+    <img src="./image/5/6.jpg" alt="img">
+</div>
+
+
+
+
+
+<!-- footer -->
+ <div class="grid my-16 gap-3 grid-cols-1 sm:grid-cols-2 sm:gap-6 md:grid-cols-3 md:gap-8 lg:grid-cols-4 lg:mx-16 lg:gap-10 ">
+    <div class="p-2">
+        <h1 class="font-semibold text-2xl pb-3">Furni<span class="text-orange-500">tures.</span></h1>
+        <p class="mb-3 dark:text-slate-300">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente perspiciatis quis nostrum,</p>
+        
+        <label class="switch-button" for="switch">
+            <div class="switch-outer">
+                <input id="switch" type="checkbox">
+                <div class="button">
+                    <span class="button-toggle"></span>
+                    <span class="button-indicator"></span>
+                </div>
+            </div>
+        </label>
+    
+    </div>
+    <div class="p-2">
+        <h1 class="font-semibold text-lg pb-3">Company</h1>
+        <p class="dark:text-slate-300">About</p>
+        <p class="dark:text-slate-300">Office</p>
+        <p class="dark:text-slate-300">Contact</p>
+        <p class="dark:text-slate-300">Help & FA'Q</p>
+    </div>
+    <div class="p-2">
+        <h1 class="font-semibold text-lg pb-3">Useuful Links</h1>
+        <p class="dark:text-slate-300">Privacy Protection</p>
+        <p class="dark:text-slate-300">Safe Payment</p>
+        <p class="dark:text-slate-300">Theme Of Service</p>
+        <p class="dark:text-slate-300">Policy Privaci</p>
+    </div>
+    <div class="p-2">
+        <h1 class="font-semibold text-lg pb-3">Newslatter</h1>
+        <p class="text-red-400 dark:text-slate-300">Lorem ipsum dolor sit amet, consectetur adipisicing </p>
+        <div class="form mt-3 border-2  m-2 pl-2 inline-flex rounded-full items-center">
+            <input type="text" name="username" placeholder="User... " class="w-full bg-transparent"   />
+            <i class='bx bx-navigation bg-red-500 text-white text-md border-2 p-4 rounded-full'></i>
+        </div>
+   
+    </div>
+ </div>
+
+
+
+   
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+
+    menuBtn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+    });
+
+    // dark
+    
+</script>
+    <script src="js.js"></script>
+</body>
+</html>
